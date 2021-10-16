@@ -1,0 +1,84 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+class java.awt.BorderLayout
+class java.awt.Color
+class java.awt.EventQueue
+class java.awt.Graphics
+class java.awt.GridLayout
+class java.awt.event.ActionEvent
+class java.awt.event.ActionListener
+class java.awt.event.KeyAdapter
+class java.awt.event.KeyEvent
+class java.awt.image.BufferedImage
+class java.io.File
+class java.io.FileInputStream
+class java.io.FileNotFoundException
+class java.io.IOException
+class java.io.InputStream
+class java.lang.Thread
+class java.util.Random
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.imageio.ImageIO
+class javax.sound.sampled.AudioInputStream
+class javax.sound.sampled.AudioSystem
+class javax.sound.sampled.Clip
+class javax.swing.ImageIcon
+class javax.swing.JFrame
+class javax.swing.JLabel
+class javax.swing.JPanel
+class javax.swing.Timer
+class proyecto_1.CronoThread
+class proyecto_1.Juego
+class proyecto_1.Pause_menu
+class proyecto_1.Pieza
+class proyecto_1.Pieza.Tetrominoe
+class proyecto_1.Proyecto_1
+class proyecto_1.Tablero
+class proyecto_1.Tetris_menu
+proyecto_1.CronoThread --|> java.lang.Thread
+proyecto_1.CronoThread ..> java.util.logging.Level
+proyecto_1.CronoThread ..> java.util.logging.Logger
+proyecto_1.Juego ..> java.lang.SuppressWarnings
+proyecto_1.Juego ..> java.awt.BorderLayout
+proyecto_1.Juego ..> java.awt.EventQueue
+proyecto_1.Juego ..> java.awt.GridLayout
+proyecto_1.Juego ..> java.awt.event.KeyEvent
+proyecto_1.Juego --|> javax.swing.JFrame
+proyecto_1.Juego ..> javax.swing.JLabel
+proyecto_1.Pause_menu ..> java.lang.SuppressWarnings
+proyecto_1.Pause_menu --|> javax.swing.JFrame
+proyecto_1.Pieza ..> java.util.Random
+proyecto_1.Proyecto_1 ..> java.io.File
+proyecto_1.Proyecto_1 ..> java.io.FileInputStream
+proyecto_1.Proyecto_1 ..> java.io.FileNotFoundException
+proyecto_1.Proyecto_1 ..> java.io.IOException
+proyecto_1.Proyecto_1 ..> java.io.InputStream
+proyecto_1.Proyecto_1 ..> javax.sound.sampled.AudioInputStream
+proyecto_1.Proyecto_1 ..> javax.sound.sampled.AudioSystem
+proyecto_1.Proyecto_1 ..> javax.sound.sampled.Clip
+proyecto_1.Tablero ..> java.lang.Override
+proyecto_1.Tablero ..> java.awt.Color
+proyecto_1.Tablero ..> java.awt.Graphics
+proyecto_1.Tablero ..> java.awt.event.ActionEvent
+proyecto_1.Tablero ..> java.awt.event.ActionListener
+proyecto_1.Tablero ..> java.awt.event.KeyAdapter
+proyecto_1.Tablero ..> java.awt.event.KeyEvent
+proyecto_1.Tablero ..> javax.swing.JLabel
+proyecto_1.Tablero --|> javax.swing.JPanel
+proyecto_1.Tablero ..> javax.swing.Timer
+proyecto_1.Tablero ..> proyecto_1.Pieza.Tetrominoe
+proyecto_1.Tetris_menu ..> java.lang.SuppressWarnings
+proyecto_1.Tetris_menu ..> java.awt.Color
+proyecto_1.Tetris_menu ..> java.awt.Graphics
+proyecto_1.Tetris_menu ..> java.awt.image.BufferedImage
+proyecto_1.Tetris_menu ..> java.io.File
+proyecto_1.Tetris_menu ..> java.io.FileInputStream
+proyecto_1.Tetris_menu ..> java.io.IOException
+proyecto_1.Tetris_menu ..> java.util.logging.Level
+proyecto_1.Tetris_menu ..> java.util.logging.Logger
+proyecto_1.Tetris_menu ..> javax.imageio.ImageIO
+proyecto_1.Tetris_menu ..> javax.swing.ImageIcon
+proyecto_1.Tetris_menu --|> javax.swing.JFrame
+@enduml

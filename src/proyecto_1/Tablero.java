@@ -102,12 +102,13 @@ public class Tablero extends JPanel{
 
         clearTablero();
         newPiece();
-
+        
         timer = new Timer(PERIOD_INTERVAL, new GameCycle());
         timer.start();
         System.out.println("Inicia de verdad");
     }
 
+    
     public void pause() {
 
         isPaused = !isPaused;
